@@ -12,7 +12,12 @@ class BookData(Resource):
         count =  len(run_process)
         return Response(201, run_process, count).prepare_http_response()
         
+class BookTest(Resource):
+    def get(self):
+        return "successfull"
+        
 api.add_resource(BookData, '/api/list')
+api.add_resource(BookTest, '/api/test')
 
 
 def load_module(module_name):
