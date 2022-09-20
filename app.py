@@ -1,8 +1,5 @@
-from cProfile import run
 from flask import Flask, request
 from flask_restful import Resource, Api
-import importlib
-import constants as constants
 from response import Response
 
 app = Flask(__name__)
