@@ -1,1 +1,1 @@
-web: gunicorn app:BookTest
+heroku ps:scale web=1
